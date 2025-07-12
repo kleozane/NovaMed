@@ -74,7 +74,7 @@ namespace NovaMed.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            var student = await _context.Doctors.FindAsync(id);
+            var student = await _context.Students.FindAsync(id);
 
             _context.Remove(student);
             await _context.SaveChangesAsync();
