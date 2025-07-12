@@ -8,5 +8,6 @@ namespace NovaMed.Data
 
 
         public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Student> Students { get; set; }
     }
 }

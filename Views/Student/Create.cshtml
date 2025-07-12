@@ -1,0 +1,19 @@
+﻿@model NovaMed.Models.StudentForCreation
+@{
+    ViewData["Title"] = "Add Student";
+}
+
+
+<div class="container mt-5">
+    <form asp-action="Create">
+        <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" asp-for="FirstName" placeholder="Enter first name" />
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" asp-for="LastName" placeholder="Enter last name" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
